@@ -3,22 +3,20 @@ using Xunit;
 
 namespace test
 {
-    public class UnitTest1
+    public class BookTests
     {
         [Fact]
         public void Test1()
         {
             // arrange
-            var x = 5;
-            var y = 2;
-            var expected = 7;
+            var book = new Book("");
 
             // Action method
-            var actual = x + y;
+            // var actual = x + y;
 
 
             // assert
-            Assert.Equal(expected, actual);
+            // Assert.Equal(expected, actual);
 
         }
     }
