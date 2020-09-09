@@ -28,6 +28,7 @@ namespace GradeBook
             catch(Exception ex)
             {
                 Console.WriteLine(ex.Message);
+                throw;
             }
 
 
