@@ -14,8 +14,20 @@ namespace GradeBook.Tests
             // assert
             Assert.Equal("Book 1", book1.Name);
             Assert.Equal("Book 2", book2.Name);
+            Assert.NotSame(book1, book2);
         }
+        [Fact]
+        public void TwoVariablesCanReferenceSameObject()
+        {
+            var book1 = GetBook("Book 1");
+            var book2 = book1;
 
+            // assert
+            Assert.Same(book1, book2);
+
+            // this is similar to above but using global object that is always available
+            Assert.True(Object.ReferenceEquals(book1, book2));
+        }
         Book GetBook(string name)
         {
             return new Book(name);
