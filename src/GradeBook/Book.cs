@@ -103,23 +103,10 @@ namespace GradeBook
         - can store data for an object
         */
 
-        // Controling access to property long way
+        // Access to property in short
         public string Name
         {
-            get
-            {
-                // code i want to execute when someone wants to read the property
-                return name;
-            }
-            set
-            {
-                if(!String.IsNullOrEmpty(value))
-                {
-                // what happens when program wants to set
-                name = value; // value is implicit when using get and set
-                }
-
-            }
+            get; set;
         }
 
         private string name;
