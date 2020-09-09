@@ -11,7 +11,7 @@ namespace GradeBook
             Name = name;
         }
 
-        public void AddLetterGrade(char letter)
+        public void AddGrade(char letter) // Overloading Methods - AddGrade(char letter)
         {
             switch (letter)
             {
@@ -36,7 +36,12 @@ namespace GradeBook
                         break;
             }
         }
-        public void AddGrade(double grade)
+
+        /* 
+        # Overloading Methods allows me to use the same method name because each method is actually different with it's type and parameter
+        # C# Compiler Actually looks at the method and what is contained within the method example a double, a char + paramaters
+        */ 
+        public void AddGrade(double grade) // Overloading Methods - AddGrade(double letter)
         {
             if(grade <= 100 && grade >=0)
             {
