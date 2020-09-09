@@ -24,7 +24,6 @@ namespace GradeBook
             {
                 var grade = double.Parse(input);
                 book.AddGrade(grade);
-                book.AddGrade('A'); // Example of using both
             }
             catch(ArgumentException ex)
             {
