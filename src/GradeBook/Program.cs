@@ -10,9 +10,6 @@ namespace GradeBook
 
             var book = new Book("Adam's Grade Book");
             // Add Grades by prompting for Input
-
-
-
             while (true)
             {
                 Console.WriteLine("Enter a grade or 'q' to quit the program");
