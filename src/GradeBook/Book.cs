@@ -103,10 +103,11 @@ namespace GradeBook
         - can store data for an object
         */
 
-        // Access to property in short
+        // controling access to get and set on property
         public string Name
         {
-            get; set;
+            get; 
+            private set;
         }
 
         private string name;
