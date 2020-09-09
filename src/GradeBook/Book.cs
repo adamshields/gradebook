@@ -17,7 +17,7 @@ namespace GradeBook
             {
                 AddGrade(90);
             }
-            else if (letter = 'B')
+            else if (letter == 'B')
             {
                 AddGrade(80);
             }
