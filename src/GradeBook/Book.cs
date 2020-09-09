@@ -110,6 +110,6 @@ namespace GradeBook
             private set;
         }
 
-        private string name;
+        readonly string category = "Science";
     }
 }
