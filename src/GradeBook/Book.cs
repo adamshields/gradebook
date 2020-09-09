@@ -34,7 +34,7 @@ namespace GradeBook
             {
                 if(grades[index] == 42.1)
                 {
-                    break;
+                    continue;
                 }
                 result.Low = Math.Min(grades[index], result.Low);
                 result.High = Math.Max(grades[index], result.High);
