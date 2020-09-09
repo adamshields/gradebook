@@ -13,20 +13,18 @@ namespace GradeBook
 
 
 
-            var done = false;
-
-            while (!done)
+            while (true)
             {
                 Console.WriteLine("Enter a grade or 'q' to quit the program");
                 var input = Console.ReadLine();
 
                 if(input == "q")
                 {
-                    done = true;
-                    continue;
+                    break;
                 }
 
                 var grade = double.Parse(input);
+                book.AddGrade(grade);
             }
             
             
